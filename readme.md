@@ -38,8 +38,8 @@ Use polynomial reconstruction methods like:
 Two separate scripts handle different test cases:
 
 ### Test Case 1 (input1.json)
-# In main.js, ensure the following line is present:
-Run `const jsonData = fs.readFileSync('input1.json', 'utf8')`
+#### In main.js, ensure the following line is present:
+`const jsonData = fs.readFileSync('input1.json', 'utf8')`
 # Run the script:
 Run `main.js`:
 ```sh
@@ -48,10 +48,10 @@ node main.js
 
 ### Test Case 2 (input2.json)
 # In main.js, ensure the following line is present:
-Run `const jsonData = fs.readFileSync('input1.json', 'utf8')`
-# change it to input2.json and 
+`const jsonData = fs.readFileSync('input1.json', 'utf8')`
+#### change it to input2.json and 
 # Run the script:
-Run `main2.js`:
+`main2.js`:
 ```sh
 node main2.js
 ```
