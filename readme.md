@@ -56,6 +56,6 @@ node main2.js
 - Polynomial degree is `m = k - 1`.
 
 ## Output
-Print the **constant term (secret)** for both test cases.
+The output will be displayed.
 
 
