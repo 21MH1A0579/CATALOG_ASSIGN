@@ -47,7 +47,7 @@ node main.js
 ```
 
 ### Test Case 2 (input2.json)
-# In main.js, ensure the following line is present:
+#### In main.js, ensure the following line is present:
 `const jsonData = fs.readFileSync('input1.json', 'utf8')`
 #### change it to input2.json and 
 # Run the script:
