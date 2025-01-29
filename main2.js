@@ -1,12 +1,10 @@
 const math = require('mathjs');
 const fs = require('fs');
 
-// Function to convert values from any base to base 10
 function baseToDecimal(value, base) {
     return parseInt(value, base);
 }
 
-// Function to perform Lagrange interpolation to find the constant term 'c'
 function lagrangeInterpolation(points) {
     let k = points.length;
     let constant = 0.0;
@@ -24,7 +22,7 @@ function lagrangeInterpolation(points) {
     return constant;
 }
 
-// Read JSON input from input2.json
+
 fs.readFile('input2.json', 'utf8', (err, data) => {
     if (err) {
         console.error("Error reading the JSON file:", err);
@@ -37,7 +35,7 @@ fs.readFile('input2.json', 'utf8', (err, data) => {
 
     let points = [];
 
-    // Decode the points
+   
     for (const key in root) {
         if (key === "keys") continue;
 
@@ -49,7 +47,7 @@ fs.readFile('input2.json', 'utf8', (err, data) => {
         points.push([x, y]);
     }
 
-    // Find the constant term 'c' using Lagrange Interpolation
+  
     const c = lagrangeInterpolation(points);
     console.log("Constant term c:", c);
 });
